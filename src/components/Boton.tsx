@@ -1,13 +1,13 @@
 import React from 'react'
 
-interface Props { 
+interface Props {
   contenido: string;
   estilos: string;
 }
-
-const Boton = ({contenido,estilos}:Props) => {
+//PROP DRYLING -> PASAR DATA DE UN COMPONENTE A OTRO 
+const Boton = ({ contenido, estilos }: Props) => {
   return (
-    <button className={estilos} type="button">{ contenido}</button>
+    <button className={estilos} type="button">{contenido}</button>
   )
 }
 

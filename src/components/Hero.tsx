@@ -1,4 +1,5 @@
 import React from 'react'
+import Boton from './Boton';
 
 interface Props {
   titulo: string;
@@ -20,7 +21,7 @@ const Hero = ({titulo,contenido,contenidoBoton}:Props) => {
         <p className="text-[#83869A] dark:text-[#fffa] py-5 px-3 text-balance">
           {contenido}
         </p>
-        <button className="bg-gradient-to-t from-[#f02aa6] to-[#FF6F48]  w-fit  text-white py-3 px-12 rounded-full mx-3 active:opacity-70 hover:opacity-70" type="button">Get Started</button>
+        <Boton estilos="bg-gradient-to-t from-[#f02aa6] to-[#FF6F48]  w-fit  text-white py-3 px-12 rounded-full mx-3 active:opacity-70 hover:opacity-70" contenido={contenidoBoton}/>
       </div>
       <div className=" z-1 flex max-w-full w-full h-full  md:h-[640px] bg-no-repeat md:bg-[bottom_6rem_left_-3rem] bg-[url(/src/assets/image-hero-mobile.webp)] md:bg-[url(/src/assets/image-hero-tablet.webp)] lg:bg-[url(/src/assets/image-hero-desktop.webp)]"></div>
     </section>
