@@ -1,17 +1,11 @@
 import React from 'react'
+import MiHeader from './components/MiHeader'
 
 const App = () => {
   return (
     <body className="flex flex-col bg-[#F8F9FF]  dark:bg-[#13183F]">
       <div className="max-w-[90%] m-auto">
-        <header>
-          <nav className="flex w-full px-3 pt-5 pb-3 justify-between bg-opacity-0">
-            <div className=" h-8 w-[200px] bg-no-repeat mx-0 my-auto bg-[url(/starter-code/assets/logo-dark.svg)] dark:bg-[url(/src/assets/logo-light.svg)]">
-            </div>
-
-            <button className="bg-[#13183F] text-[#F8F9FF] dark:bg-[#F8F9FF] dark:text-[#13183F] py-3 px-8 rounded-full m-[0 auto]  active:opacity-70 hover:opacity-70" type="button">Get Started</button>
-          </nav>
-        </header>
+        <MiHeader/>
         <section className="grid  auto-rows-[minmax(0,50vh)]  auto-cols-fr   md:grid-cols-2 ">
           <div className="self-center">
             <h1 className="text-[56px] dark:text-white font-bold px-3 mt-10 leading-tight text-balance ">
